@@ -1,0 +1,8 @@
+
+.dark-blue{
+  color: var(--dark-blue);
+}
+
+.grid-container{
+  display: grid;
+}

@@ -1,0 +1,22 @@
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--menu-width);
+  overflow: scroll;
+}
+
+.nav-item{
+  background-color: rgb(0, 22, 168);
+  text-decoration: none;
+  color: rgb(241, 241, 241);
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.nav-item:hover{
+  background-color: rgb(91, 225, 255);
+  color: var(--dark-blue);
+}
