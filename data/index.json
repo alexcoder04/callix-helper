@@ -2,11 +2,28 @@
   "searchIndex": [
     {
       "keys": "suchen finden programme apps dateien",
-      "page": "find"
+      "page": "find",
+      "name": "Suchen und finden"
     },
     {
       "keys": "tasten supertaste tastatur",
-      "page": "keyboard"
+      "page": "keyboard",
+      "name": "Tasten"
+    },
+    {
+      "keys": "desktop startbildschirm leiste dock",
+      "page": "desktop",
+      "name": "Der Desktop"
+    },
+    {
+      "keys": "leiste menü",
+      "page": "bar",
+      "name": "Die Leiste"
+    },
+    {
+      "keys": "apps abmelden herunterfahren finden startmenü menu",
+      "page": "menu",
+      "name": "Appsmenü"
     }
   ]
 }

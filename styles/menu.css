@@ -4,7 +4,8 @@ nav{
   top: 0;
   left: 0;
   bottom: 0;
-  width: var(--menu-width);
+  width: 30vw;
+  max-width: 400px;
   overflow: scroll;
 }
 
@@ -19,4 +20,19 @@ nav{
 .nav-item:hover{
   background-color: rgb(91, 225, 255);
   color: var(--dark-blue);
+}
+
+#search-input, #search-btn{
+  border: none;
+  outline: none;
+  margin: 5px;
+  font-size: inherit;
+  font-family: inherit;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+#search-btn:hover{
+  background-color: rgb(74, 152, 255);
+  cursor: pointer;
 }

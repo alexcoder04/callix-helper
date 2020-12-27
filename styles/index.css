@@ -9,7 +9,6 @@
 
 :root{
   font-size: 20px;
-  --menu-width: 30vw;
   --dark-blue: rgb(13, 0, 80);
   font-family: Roboto;
 }
@@ -21,7 +20,7 @@ html{
 }
 
 main{
-  padding-left: var(--menu-width);
+  padding-left: 30vw;
 }
 
 .tux-container{
@@ -30,4 +29,12 @@ main{
 
 h1{
   font-size: 1.5rem;
+}
+
+.search-result{
+  padding: 5px;
+}
+
+.search-result:hover{
+  background-color: rgba(0, 79, 255, 0.32);
 }

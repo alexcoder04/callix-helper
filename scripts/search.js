@@ -3,7 +3,7 @@ const searchBtn = document.getElementById("search-btn");
 const searchInput = document.getElementById("search-input");
 
 const addResult = (item, resultsBox) => {
-  resultsBox.innerHTML += `<p>keywords: ${item.keys},<br> page: <a href='${item.page}.html'>${item.page}</a></p>`;
+  resultsBox.innerHTML += `<div class='search-result'><div>Seite: <a href='${item.page}.html'>${item.name}</a></div><div>Themen: ${item.keys}</div></div>`;
 }
 
 const createResultsBox = () => {
@@ -11,7 +11,7 @@ const createResultsBox = () => {
   return document.getElementById("results-box");
 }
 
-searchBtn.addEventListener("click", () => {
+const search = () => {
   const searchWord = searchInput.value;
 
   fetch("../data/index.json")
@@ -19,7 +19,7 @@ searchBtn.addEventListener("click", () => {
     .then(data => {
       var resultsList = [];
       data.searchIndex.forEach(item => {
-        if(item.keys.includes(searchWord)){
+        if(item.keys.includes(searchWord.toLowerCase())){
           resultsList.push(item)
         }
       });
@@ -31,11 +31,15 @@ searchBtn.addEventListener("click", () => {
         resultsList.forEach(result => {
           addResult(result, resultsBox);
         });
-
       } else {
         resultsBox.innerHTML = "<h3>Keine Ergebnisse</h3>";
       }
-
     });
+}
 
+searchBtn.addEventListener("click", search);
+searchInput.addEventListener("keydown", (e) => {
+  if (e.key == "Enter"){
+    search();
+  }
 });
