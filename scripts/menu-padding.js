@@ -1,4 +1,5 @@
-window.onresize = () => {
+
+const resize = () => {
   console.log("resized");
   if (document.getElementById("menu").offsetWidth == 400){
     document.querySelector("main").style.paddingLeft = "400px";
@@ -6,3 +7,7 @@ window.onresize = () => {
     document.querySelector("main").style.paddingLeft = "30vw";
   }
 }
+
+document.body.onload = resize;
+
+window.onresize = resize;

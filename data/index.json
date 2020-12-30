@@ -18,12 +18,32 @@
     {
       "keys": "leiste menü",
       "page": "bar",
-      "name": "Die Leiste"
+      "name": "Die Leisten"
     },
     {
       "keys": "apps abmelden herunterfahren finden startmenü menu",
       "page": "menu",
       "name": "Appsmenü"
+    },
+    {
+      "keys": "dateien ordner downloads speichern öffnen",
+      "page": "files",
+      "name": "Dateien"
+    },
+    {
+      "keys": "internet web suchen recherche google webseite website",
+      "page": "internet",
+      "name": "Internet"
+    },
+    {
+      "keys": "tipps screenshot bildschirmfoto tastaturkürzel hotkeys",
+      "page": "tips",
+      "name": "Nützliche Tipps"
+    },
+    {
+      "keys": "arbeitsflächen sortieren überblick",
+      "page": "workspaces",
+      "name": "Arbeitsflächen"
     }
   ]
 }

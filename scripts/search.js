@@ -3,7 +3,7 @@ const searchBtn = document.getElementById("search-btn");
 const searchInput = document.getElementById("search-input");
 
 const addResult = (item, resultsBox) => {
-  resultsBox.innerHTML += `<div class='search-result'><div>Seite: <a href='${item.page}.html'>${item.name}</a></div><div>Themen: ${item.keys}</div></div>`;
+  resultsBox.innerHTML += `<div class='search-result'><div>Artikel: <a href='${item.page}.html'>${item.name}</a></div><div>Stciwörter: ${item.keys}</div></div>`;
 }
 
 const createResultsBox = () => {
