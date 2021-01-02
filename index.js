@@ -27,7 +27,9 @@ const menuTemplate = [
       {
         label: "Startseite",
         accelerator: "Ctrl+H",
-        role: "reload"
+        click(){
+          focusedWindow.loadURL(path.join('file://', __dirname, 'html/index.html'));
+        }
       },
       {
         label: "Beenden",
@@ -68,9 +70,7 @@ const menuTemplate = [
       {
         label: "Neu laden",
         accelerator: "Ctrl+R",
-        click(item, focusedWindow){
-          focusedWindow.reload();
-        }
+        role: "reload"
       }
     ]
   },
