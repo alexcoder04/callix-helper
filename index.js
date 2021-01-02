@@ -27,9 +27,7 @@ const menuTemplate = [
       {
         label: "Startseite",
         accelerator: "Ctrl+H",
-        click(item, focusedWindow){
-          focusedWindow.loadURL(path.join('file://', __dirname, '/index.html'));
-        }
+        role: "reload"
       },
       {
         label: "Beenden",
@@ -37,6 +35,23 @@ const menuTemplate = [
         click(){
           app.quit();
         }
+      }
+    ]
+  },
+  {
+    label: "Bearbeiten",
+    submenu: [
+      {
+        label: "Kopieren",
+        role: "copy"
+      },
+      {
+        label: "Ausschneiden",
+        role: "cut"
+      },
+      {
+        label: "Einfügen",
+        role: "paste"
       }
     ]
   },
@@ -58,11 +73,24 @@ const menuTemplate = [
         }
       }
     ]
+  },
+  {
+    label: "Über",
+    submenu: [
+      {
+        label: "Über Callix-Helfer",
+        click(item, focusedWindow){
+          focusedWindow.loadURL(path.join('file://', __dirname, 'html/about.html'));
+        }
+      }
+    ]
   }
 ]
 
 const createWindow = () => {
   const win = new BrowserWindow({
+    width: 1600,
+    height: 900,
     webPreferences: {
       nodeIntergration: false
     }
