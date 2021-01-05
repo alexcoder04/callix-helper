@@ -1,8 +1,8 @@
 
 const resize = () => {
   console.log("resized");
-  if (document.getElementById("menu").offsetWidth == 400){
-    document.querySelector("main").style.paddingLeft = "400px";
+  if (document.getElementById("menu").offsetWidth == 250){
+    document.querySelector("main").style.paddingLeft = "250px";
   } else{
     document.querySelector("main").style.paddingLeft = "30vw";
   }

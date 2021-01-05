@@ -27,7 +27,7 @@ const menuTemplate = [
       {
         label: "Startseite",
         accelerator: "Ctrl+H",
-        click(){
+        click(item, focusedWindow){
           focusedWindow.loadURL(path.join('file://', __dirname, 'html/index.html'));
         }
       },

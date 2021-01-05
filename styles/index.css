@@ -1,6 +1,5 @@
 
 @import "menu.css";
-@import "classes.css";
 
 @font-face {
   font-family: Roboto;
@@ -9,14 +8,14 @@
 
 :root{
   font-size: 20px;
-  --dark-blue: rgb(13, 0, 80);
   font-family: Roboto;
+  color: #222D31;
 }
 
 html{
   padding: 0;
   margin: 0;
-  background-color: rgb(172, 238, 255);
+  background-color: white;
 }
 
 main{
@@ -25,6 +24,10 @@ main{
 
 .tux-container{
   display: flex;
+}
+
+.grid-container{
+  display: grid;
 }
 
 h1{
@@ -40,5 +43,5 @@ img{
 }
 
 .search-result:hover{
-  background-color: rgba(0, 79, 255, 0.32);
+  background-color:  rgba(104, 220, 236, 0.5);
 }

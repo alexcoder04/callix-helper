@@ -5,21 +5,20 @@ nav{
   left: 0;
   bottom: 0;
   width: 30vw;
-  max-width: 400px;
-  overflow: scroll;
+  max-width: 250px;
+  /*overflow: scroll;*/
 }
 
 .nav-item{
-  background-color: rgb(0, 22, 168);
+  background-color: #F7F7F7;
   text-decoration: none;
-  color: rgb(241, 241, 241);
-  padding: 20px;
+  padding: 10px;
   font-size: 1rem;
+  color: inherit;
 }
 
 .nav-item:hover{
-  background-color: rgb(91, 225, 255);
-  color: var(--dark-blue);
+  background-color: #BAC2C6;
 }
 
 #search-input, #search-btn{
@@ -33,6 +32,6 @@ nav{
 }
 
 #search-btn:hover{
-  background-color: rgb(74, 152, 255);
+  background-color: #68DCEC;
   cursor: pointer;
 }
